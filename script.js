@@ -7,13 +7,17 @@ header_toggle.addEventListener("click", () => {
 })
 
 const open_mobile_sidebar = document.querySelector(".nav-toggle");
-const close_mobile_sidebar = document.querySelector(".close-mobile-nav")
-const mobile_sidebar = document.querySelector(".nav-mobile")
+const close_mobile_sidebar = document.querySelector(".close-mobile-nav");
+const mobile_sidebar = document.querySelector(".nav-mobile");
+
+const overlay = document.querySelector(".overlay");
 
 open_mobile_sidebar.addEventListener("click", () => {
     mobile_sidebar.classList.add("active");
+    overlay.classList.add("show");
 })
 
 close_mobile_sidebar.addEventListener("click", () => {
     mobile_sidebar.classList.remove("active");
+    overlay.classList.remove("show");
 })
