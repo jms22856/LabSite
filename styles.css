@@ -225,7 +225,7 @@ h1, h2, h3 {
     flex-direction: column;
 
     margin: 0;
-    padding: 0;
+    padding: 0 1rem;
 }
 
 .nav-mobile li a {
@@ -233,6 +233,11 @@ h1, h2, h3 {
     padding: 0.75rem 1.5rem;
     text-decoration: none;
     color: white;
+    border-bottom: 2px dotted white;
+}
+
+.nav-mobile li a:hover {
+    background-color: #3C0000;
 }
 
 
@@ -248,18 +253,20 @@ h1, h2, h3 {
 
 .welcome-title {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     background-color: #500000;
     color: white;
     padding-left: 5rem;
+    min-height: 30vh;
+
+    align-items: stretch;
 }
 
 .welcome-title h1 {
-    font-family: "Oswald", sans-serif;
-    font-style: normal;
+    font-family: "Work Sans", sans-serif;
+    font-style: italic;
+    font-size: 3rem;
     color:white;
-    font-weight: 300;
+    font-weight: 900;
     padding: 0;
     margin: 2rem 0 1rem 0;
 }
@@ -269,36 +276,75 @@ h1, h2, h3 {
     margin: 0;
     padding: 0;
     font-weight: 400;
+    font-size: 1.5rem;
 }
 
 .welcome-title section {
     flex: 1;
+    margin: 0;
+    padding: 0 0 2rem 0;
+    border: 0;
+
+    box-sizing: border-box;
 }
 
 .welcome-title figure {
     flex: 1;
     display: flex;
     align-items: stretch;
-    margin: 0
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+.welcome-photo-container {
+    display: 0 0 auto;
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+
+    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+
 }
 
 .welcome-title img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: cover;;
     display: block;
-    margin: 0;
+
 
     /*Top-left, Top-right, bottom-right, bototm-left*/
     /*Top-left is moved 10% of the right*/
     /*All other coords stay put*/
-    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+@media (max-width: 800px) {
+    .welcome-title {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    .welcome-title section {
+        padding-bottom: 2rem;
+    }
+
+    .welcome-title h1, li {
+        text-align: center;
+    }
+
+    .welcome-photo-container {
+        clip-path: none;;
+    }
 }
 
 .PI-overview {
     display: flex;
     flex-direction: row;
-    background-color: white;
+    align-items: stretch;
+    background-color: #f6f6f6;
     padding-top: 2rem;
     
 }
@@ -319,28 +365,80 @@ h1, h2, h3 {
     margin: 0;
 }
 
+.PI-profile a {
+    color: black;
+}
+
 .PI-overview section {
-    flex: 1;
+   flex: 2;
+   padding: 1rem;
+}
+
+#PI-overview-name {
+    font-family: "Oswald", sans-serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+}
+
+#PI-overview-title {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #3e3e3e
+}
+
+#PI-PFP-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #PI-PFP {
+    width: 75%;
+}
+
+.PI-video {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
     width: 100%;
+    padding-top: 56.25%;
+}
+
+.PI-video p {
+    text-align: center;
+}
+
+.PI-video video {
+    object-fit: cover;
+    display: block;
+    height: 75%;
+    width: 75%;
+}
+
+.PI-video-placeholder {
+    width: 100%;
+    padding-top: 56.25%;
 }
 
 .research-overview {
-    background-color: #500000;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 1rem 5rem;
 }
 
 .research-overview h2, h3 {
-    color: white;
+    color: #500000;
 }
 
+/*This is the title over the research-overview*/
 .research-overview h2 {
     text-align: center;
     font-family: "Oswald";
-    font-weight: 300;
+    font-weight: 400;
     font-size: 3rem;
 }
 
@@ -367,9 +465,6 @@ h1, h2, h3 {
     }
 }
 
-.research-overview li {
-    border: 2px solid red;
-}
 
 
 .research-overview-item {
@@ -398,23 +493,21 @@ h1, h2, h3 {
 }
 
 .research-overview-item h3 {
-    font-family: "Oswald";
-    font-weight: 200;
-    font-size: 2rem;
-    border: 2px solid blue;
+    font-family: "Work Sans";
+    font-weight: 600;
+    font-size: 1.6rem;
     width: 100%;
-    background-color: #3C0000;
     margin-top: 0;
 
 }
 
 .research-overview-item h3 a {
-    color: white;
-    text-decoration: none;
+    color: #500000;
+    text-decoration: underline;
 }
 
 .research-overview-item h3 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .research-overview-item figure {
@@ -444,6 +537,8 @@ h1, h2, h3 {
 .contact {
     display: flex;
     flex-direction: row;
+    background-color: #500000;
+    color: white;
 }
 
 @media (max-width: 800px) {
@@ -452,18 +547,36 @@ h1, h2, h3 {
     }
 }
 
+.contact h2, a {
+    color: white;
+}
+
+
 .contact-info {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
 .contact-info section {
     flex: 1;
+    padding: 1rem;
 }
 
 .contact-map {
     flex: 1
+}
+
+.under-dev-label {
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+    background-color: #3C0000;
+    color: white;
+    z-index: 1000;
 }
