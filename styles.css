@@ -103,7 +103,7 @@ h1, h2, h3 {
 }
 
 .nav-left li a:hover, .nav-right li a:hover {
-    box-shadow: inset 0 -4px 0 0 #500000;
+    box-shadow: inset 0 -4px 0 0 #03045E;
 }
 
 
@@ -134,7 +134,7 @@ h1, h2, h3 {
     position: relative;
     z-index: 1000; /*Place the button above all else*/
     margin-left: 1rem;
-    background-color: #500000;
+    background-color: #03045E;
     border: 1px solid black;
 
     font-size: 1.3rem;
@@ -187,7 +187,7 @@ h1, h2, h3 {
     height: 100vh;
     z-index: 10000;
 
-    background: #500000;
+    background: #03045E;
 
     display: flex;
     flex-direction: column;
@@ -241,8 +241,9 @@ h1, h2, h3 {
     border-bottom: 2px dotted white;
 }
 
+/*Hovering over mobile menu links*/
 .nav-mobile li a:hover {
-    background-color: #3C0000;
+    background-color: #B2ECE1;
 }
 
 
@@ -258,7 +259,7 @@ h1, h2, h3 {
 
 .welcome-title {
     display: flex;
-    background-color: #500000;
+    background-color: #03045E;
     color: white;
     padding-left: 5rem;
     min-height: 30vh;
