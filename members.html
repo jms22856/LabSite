@@ -5,28 +5,150 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="styles.css">
-
+        <link rel="stylesheet" href="css/members.css">
     </head>
     <body>
         <!--Put header here later-->
-        <div>
-            <div>
-                Members list
+        <div class="overlay"></div>
+        <header class="site-header">
+            <nav class="header-bar">
+                <!--Hamburger nav button-->
+
+                <ul class="nav-left">
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="about.html">Instrumentation</a></li>
+                    <li><a href="about.html">Modeling</a></li>
+                </ul>
+                <a class="banner" href="/">LINDAHL LAB</a>
+                <ul class="nav-right">
+                    <li><a href="about.html">Members</a></li>
+                    <li><a href="about.html">Positions</a></li>
+                    <li><a href="about.html">Photos</a></li>
+                </ul>
+            </nav>
+
+            <!---Mobile Nav-->
+            <nav class="mobile-header">
+                <button class="nav-toggle" aria-expanded="false">
+                    MENU ☰
+                </button>
+                <a class="banner" href="/">LINDAHL LAB</a>
+            </nav>
+
+            <div class="nav-mobile">
+                <button class="close-mobile-nav">✕</button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="about.html">Instrumentation</a></li>
+                    <li><a href="about.html">Modeling</a></li>
+                    <li><a href="about.html">Members</a></li>
+                    <li><a href="about.html">Positions</a></li>
+                    <li><a href="about.html">Photos</a></li>
+                </ul>
             </div>
-            <div>
-                <h2>Lindahl Lab Group</h2>
-                <section>
+
+        </header>
+        <h1 id="members-pages-title">Lindahl Lab Members</h2>
+        <main>
+            <nav class="members-nav">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="#PI-section">Principal Investigator</a></li>
+                    <li><a href="#postdoc-section">Postdocs</a></li>
+                    <li>Grad Students</li>
+                    <li>Collaborators</li>
+                    <li>Undergrads</li>
+                </ul>
+            </nav>
+            <div class="members-main-content">
+                <section class="member-roles-container" id="PI-section">
                     <h2>Principal Investigator</h2>
+                    <div class="member-container">
+                        <div class="figure-and-links">
+                            <figure>
+                                <img src="images/GenericStickFigure.png" class="member-pfp">
+                            </figure>
+                            <a href="index.html">ResearchGate</a>
+                            <a href="index.html">Biosketch</a>
+                        </div>
+                        <p class="member-description">
+                            Hello, my name is Paul, and I started this lab because I enjoy killing mice. During my job, I recruit grad students to kill mice for me. In my free time, I enjoy making my grad students kill mice.
+                        </p>
+                    </div>
                 </section>
-                <section>
-                    <h2>Postdocs</h2>
+                <section class="member-roles-container" id="postdoc-section">
+                    <h2>Postdoctoral Researchers</h2>
+                    <div class="member-container">
+                        <div class="figure-and-links">
+                            <figure>
+                                <img src="images/GenericStickFigure.png" class="member-pfp">
+                            </figure>
+                            <a href="index.html">ResearchGate</a>
+                            <a href="index.html">Biosketch</a>
+                        </div>
+                        <p class="member-description">
+                            Hello, my name is Paul, and I started this lab because I enjoy killing mice. During my job, I recruit grad students to kill mice for me. In my free time, I enjoy making my grad students kill mice.
+                        </p>
+                    </div>
                 </section>
-                <section>
+                <section class="member-roles-container" id="grad-student-section">
                     <h2>Graduate Students</h2>
+                    <div class="member-container">
+                        <div class="figure-and-links">
+                            <figure>
+                                <img src="images/GenericStickFigure.png" class="member-pfp">
+                            </figure>
+                            <a href="index.html">ResearchGate</a>
+                            <a href="index.html">Biosketch</a>
+                        </div>
+                        <p class="member-description">
+                            Hello, my name is Paul, and I started this lab because I enjoy killing mice. During my job, I recruit grad students to kill mice for me. In my free time, I enjoy making my grad students kill mice.
+                        </p>
+                    </div>
+                    <div class="member-container">
+                        <div class="figure-and-links">
+                            <figure>
+                                <img src="images/GenericStickFigure.png" class="member-pfp">
+                            </figure>
+                            <a href="index.html">ResearchGate</a>
+                            <a href="index.html">Biosketch</a>
+                        </div>
+                        <p class="member-description">
+                            Hello, my name is Paul, and I started this lab because I enjoy killing mice. During my job, I recruit grad students to kill mice for me. In my free time, I enjoy making my grad students kill mice.
+                        </p>
+                    </div>
                 </section>
-                <section>
+                <section class="member-roles-container" id="collab-section">
+                    <h2>Collaborators</h2>
+                    <div class="member-container">
+                        <div class="figure-and-links">
+                            <figure>
+                                <img src="images/GenericStickFigure.png" class="member-pfp">
+                            </figure>
+                            <a href="index.html">ResearchGate</a>
+                            <a href="index.html">Biosketch</a>
+                        </div>
+                        <p class="member-description">
+                            Hello, my name is Paul, and I started this lab because I enjoy killing mice. During my job, I recruit grad students to kill mice for me. In my free time, I enjoy making my grad students kill mice.
+                        </p>
+                    </div>
+                </section>
+                <section class="member-roles-container" id="undergrad-section">
                     <h2>Undergraduate Students</h2>
+                    <div class="member-container">
+                        <div class="figure-and-links">
+                            <figure>
+                                <img src="images/GenericStickFigure.png" class="member-pfp">
+                            </figure>
+                            <a href="index.html">ResearchGate</a>
+                            <a href="index.html">Biosketch</a>
+                        </div>
+                        <p class="member-description">
+                            Hello, my name is Paul, and I started this lab because I enjoy killing mice. During my job, I recruit grad students to kill mice for me. In my free time, I enjoy making my grad students kill mice.
+                        </p>
+                    </div>
                 </section>
             </div>
-        </div>
+        </main>
     </body>

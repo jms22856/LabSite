@@ -1,0 +1,104 @@
+html {
+    scroll-behavior: smooth; /*Makes the scrolling smooth for side nav*/
+}
+
+main {
+    display: flex;
+}
+
+a {
+    color: black;
+}
+
+#members-pages-title {
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Oswald";
+    font-weight: 400;
+}
+
+.members-nav {
+    flex: 1;
+    border: 2px solid red;
+
+    border-right: 2px dashed #500000;
+
+    /*Makes it so the sidebar doesn't scale based on members-main-content*/
+    align-self: flex-start;
+
+    /*Makes the sidebar stick when scrolling*/
+    position: sticky;
+    top: 0;
+}
+
+.members-nav h2, ul {
+    padding: 0rem 2rem;
+    border: 2px solid blue;
+}
+
+.members-nav ul {
+    list-style-type: none;
+}
+
+.members-nav li {
+    padding: 0.5rem 0rem;
+}
+
+.members-nav a {
+    text-decoration: none;
+}
+
+.members-nav a:hover {
+    text-decoration: underline;
+    color: #500000;
+}
+
+
+.members-main-content {
+    flex: 5;
+
+    display: flex;
+    flex-direction:column;
+}
+
+.member-roles-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.member-roles-container h2 {
+    text-align: center;
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.member-container {
+    display: flex;
+    gap: 5rem;
+    padding: 1rem 4rem;
+
+    border: 2px solid green
+}
+
+.figure-and-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.figure-and-links a {
+    color: #500000
+}
+
+.figure-and-links a:hover {
+    text-decoration: none;
+}
+
+.member-pfp {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border: 2px solid purple
+}
