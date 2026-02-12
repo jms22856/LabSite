@@ -6,9 +6,11 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="css/members.css">
+
+        <link rel="icon" href="images/tamu-favicon.png">
+
     </head>
     <body>
-        <!--Put header here later-->
         <div class="overlay"></div>
         <header class="site-header">
             <nav class="header-bar">
@@ -16,14 +18,14 @@
 
                 <ul class="nav-left">
                     <li><a href="publications.html">Publications</a></li>
-                    <li><a href="about.html">Instrumentation</a></li>
-                    <li><a href="about.html">Modeling</a></li>
+                    <li><a href="research-topics.html">Research Topics</a></li>
+                    <li><a href="modeling.html">Modeling</a></li>
                 </ul>
                 <a class="banner" href="/">LINDAHL LAB</a>
                 <ul class="nav-right">
-                    <li><a href="about.html">Members</a></li>
-                    <li><a href="about.html">Positions</a></li>
-                    <li><a href="about.html">Photos</a></li>
+                    <li><a href="members.html">Members</a></li>
+                    <li><a href="positions.html">Positions</a></li>
+                    <li><a href="photos.html">Photos</a></li>
                 </ul>
             </nav>
 
@@ -32,7 +34,7 @@
                 <button class="nav-toggle" aria-expanded="false">
                     MENU ☰
                 </button>
-                <a class="banner" href="/">LINDAHL LAB</a>
+                <a class="banner" href="/">HOME</a>
             </nav>
 
             <div class="nav-mobile">
@@ -40,41 +42,54 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="publications.html">Publications</a></li>
-                    <li><a href="about.html">Instrumentation</a></li>
-                    <li><a href="about.html">Modeling</a></li>
-                    <li><a href="about.html">Members</a></li>
-                    <li><a href="about.html">Positions</a></li>
-                    <li><a href="about.html">Photos</a></li>
+                    <li><a href="research-topics.html">Research Topics</a></li>
+                    <li><a href="modeling.html">Modeling</a></li>
+                    <li><a href="members.html">Members</a></li>
+                    <li><a href="positions.html">Positions</a></li>
+                    <li><a href="photos.html">Photos</a></li>
                 </ul>
             </div>
 
         </header>
-        <h1 id="members-pages-title">Lindahl Lab Members</h2>
+        <div id="members-page-title">
+            <h1>Lindahl Lab Members</h2>
+        </div>
         <main>
-            <nav class="members-nav">
+            <nav class="generic-nav">
                 <h2>Navigation</h2>
+                <h3><a href="#PI-section">Current Members</a></h3>
                 <ul>
                     <li><a href="#PI-section">Principal Investigator</a></li>
                     <li><a href="#postdoc-section">Postdocs</a></li>
-                    <li>Grad Students</li>
-                    <li>Collaborators</li>
-                    <li>Undergrads</li>
+                    <li><a href="#grad-student-section">Grad Students</a></li>
+                    <li><a href="#collab-section">Collaborators</a></li>
+                    <li><a href="#undergrad-section">Undergrads</a></li>
                 </ul>
+                <h3><a href="#previous-members-section">Previous Members</a></h3>
             </nav>
-            <div class="members-main-content">
+            <div class="generic-main-content">
+                <div class="note">I'll need updated profiles from all members. (Also note to self, I need to add alt text).</div>
                 <section class="member-roles-container" id="PI-section">
                     <h2>Principal Investigator</h2>
                     <div class="member-container">
                         <div class="figure-and-links">
                             <figure>
-                                <img src="images/GenericStickFigure.png" class="member-pfp">
+                                <img src="images/paul.jpg" class="member-pfp">
                             </figure>
                             <a href="index.html">ResearchGate</a>
                             <a href="index.html">Biosketch</a>
                         </div>
-                        <p class="member-description">
-                            Hello, my name is Paul, and I started this lab because I enjoy killing mice. During my job, I recruit grad students to kill mice for me. In my free time, I enjoy making my grad students kill mice.
-                        </p>
+                        <div>
+                        <h3>Paul Lindahl</h3>
+                            <p class="member-description">
+    I was born and raised in Chongqing, China, and moved to the United States at
+    age 15. I earned my bachelor’s degree in chemistry from Texas A&amp;M
+    University in 2022 and joined the Lindahl Lab in 2023. My research focuses
+    on identifying and characterizing non-transferrin-bound iron (NTBI), a toxic
+    form of iron implicated in hereditary hemochromatosis. Outside the lab, I enjoy
+    traveling, shopping, watching anime, and spending time with my family.
+                            </p>
+                        </div>
                     </div>
                 </section>
                 <section class="member-roles-container" id="postdoc-section">
@@ -82,28 +97,54 @@
                     <div class="member-container">
                         <div class="figure-and-links">
                             <figure>
-                                <img src="images/GenericStickFigure.png" class="member-pfp">
+                                <img src="images/alexiapfp.jpg" class="member-pfp">
                             </figure>
                             <a href="index.html">ResearchGate</a>
-                            <a href="index.html">Biosketch</a>
                         </div>
-                        <p class="member-description">
-                            Hello, my name is Paul, and I started this lab because I enjoy killing mice. During my job, I recruit grad students to kill mice for me. In my free time, I enjoy making my grad students kill mice.
-                        </p>
-                    </div>
+                        <div>
+                        <h3>Alexia Kreinbrink</h3>
+                            <p class="member-description">
+    I was born and raised in Chongqing, China, and moved to the United States at
+    age 15. I earned my bachelor’s degree in chemistry from Texas A&amp;M
+    University in 2022 and joined the Lindahl Lab in 2023. My research focuses
+    on identifying and characterizing non-transferrin-bound iron (NTBI), a toxic
+    form of iron implicated in hereditary hemochromatosis. Outside the lab, I enjoy
+    traveling, shopping, watching anime, and spending time with my family.
+                            </p>
+                        </div>
                 </section>
                 <section class="member-roles-container" id="grad-student-section">
                     <h2>Graduate Students</h2>
                     <div class="member-container">
                         <div class="figure-and-links">
                             <figure>
+                                <img src="images/xueyan.jpeg" class="member-pfp">
+                            </figure>
+                            <a href="index.html">ResearchGate</a>
+                            <a href="index.html">Resume</a>
+                        </div>
+                        <div>
+                        <h3>Xueyan Zheng</h3>
+                            <p class="member-description">
+    I was born and raised in Chongqing, China, and moved to the United States at
+    age 15. I earned my bachelor’s degree in chemistry from Texas A&amp;M
+    University in 2022 and joined the Lindahl Lab in 2023. My research focuses
+    on identifying and characterizing non-transferrin-bound iron (NTBI), a toxic
+    form of iron implicated in hereditary hemochromatosis. Outside the lab, I enjoy
+    traveling, shopping, watching anime, and spending time with my family.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="member-container">
+                        <div class="figure-and-links">
+                            <figure>
                                 <img src="images/GenericStickFigure.png" class="member-pfp">
                             </figure>
                             <a href="index.html">ResearchGate</a>
                             <a href="index.html">Biosketch</a>
                         </div>
                         <p class="member-description">
-                            Hello, my name is Paul, and I started this lab because I enjoy killing mice. During my job, I recruit grad students to kill mice for me. In my free time, I enjoy making my grad students kill mice.
+                            Hello, my name is Salina and I joined this lab because I enjoy killing mice.
                         </p>
                     </div>
                     <div class="member-container">
@@ -115,7 +156,7 @@
                             <a href="index.html">Biosketch</a>
                         </div>
                         <p class="member-description">
-                            Hello, my name is Paul, and I started this lab because I enjoy killing mice. During my job, I recruit grad students to kill mice for me. In my free time, I enjoy making my grad students kill mice.
+                            Hello, my name is Mark and I joined this lab because I enjoy killing mice.
                         </p>
                     </div>
                 </section>
@@ -130,7 +171,7 @@
                             <a href="index.html">Biosketch</a>
                         </div>
                         <p class="member-description">
-                            Hello, my name is Paul, and I started this lab because I enjoy killing mice. During my job, I recruit grad students to kill mice for me. In my free time, I enjoy making my grad students kill mice.
+                            Hello, my name is Justin, and I do math
                         </p>
                     </div>
                 </section>
@@ -145,10 +186,56 @@
                             <a href="index.html">Biosketch</a>
                         </div>
                         <p class="member-description">
-                            Hello, my name is Paul, and I started this lab because I enjoy killing mice. During my job, I recruit grad students to kill mice for me. In my free time, I enjoy making my grad students kill mice.
+                            Hello, my name is Ashley and I joined this lab because I want to learn how to kill mice.
                         </p>
+                    </div>
+                    <div class="member-container">
+                        <div class="figure-and-links">
+                            <figure>
+                                <img src="images/GenericStickFigure.png" class="member-pfp">
+                            </figure>
+                            <a href="index.html">ResearchGate</a>
+                            <a href="index.html">Biosketch</a>
+                        </div>
+                        <p class="member-description">
+                            Hello, my name is Jake and I joined this lab because I want to learn how to kill mice.
+                        </p>
+                    </div>
+                </section>
+                <section class="previous-members" id="previous-members-section">
+                    <h2>Previous Students</h2>
+                    <div class="previous-members-types">
+                        <section>
+                            <h3>Graduate Students</h3>
+                            <ul>
+                                <li>Hayley Brawley, Ph.D.</li>
+                                <li>Trang Nguyen, Ph.D.</li>
+                                <li>Nathaniel Dziuba, Ph.D.</li>
+                                <li>Joshua Wofford, Ph.D.</li>
+                                <li>Cody Lupardus, M.Sc.</li>
+                                <li>Michael Moore, Ph.D.</li>
+                                <li>Sean McCormick, Ph.D.</li>
+                                <li>Jinkyu Park, Ph.D.</li>
+                                <li>Alison Cockrell, Ph.D.</li>
+                                <li>Nema Jhurry, Ph.D.</li>
+                                <li>Gregory Holmes-Hampton, Ph.D.</li>
+                                <li>Jessica Garber, Ph.D.</li>
+                                <li>Ren Miao, Ph.D.</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3>Undergraduate Students</h3>
+                            <ul>
+                                <li>Shantanu Thorat</li>
+                                <li>Grant Delanoy</li>
+                            </ul>
+                        </section>
                     </div>
                 </section>
             </div>
         </main>
     </body>
+
+    <script src="script.js"></script>
+
+</html>

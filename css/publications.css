@@ -1,0 +1,35 @@
+html {
+    scroll-behavior: smooth; /*Makes the scrolling smooth for side nav*/
+}
+
+main {
+    display: flex;
+}
+
+#publications-page-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    background: #500000;
+
+}
+
+#publications-page-title h1 {
+    font-size: 3rem;
+    font-family: "Oswald";
+    font-weight: 400;
+    text-align: center;
+    color: white;
+}
+
+.generic-main-content h3 {
+    font-family: "Oswald";
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.paperTitleText {
+    font-weight: bold;
+}

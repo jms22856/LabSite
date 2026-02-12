@@ -10,63 +10,33 @@ a {
     color: black;
 }
 
-#members-pages-title {
-    text-align: center;
+#members-page-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    background: #500000;
+
+}
+
+#members-page-title h1 {
     font-size: 3rem;
     font-family: "Oswald";
     font-weight: 400;
-}
-
-.members-nav {
-    flex: 1;
-    border: 2px solid red;
-
-    border-right: 2px dashed #500000;
-
-    /*Makes it so the sidebar doesn't scale based on members-main-content*/
-    align-self: flex-start;
-
-    /*Makes the sidebar stick when scrolling*/
-    position: sticky;
-    top: 0;
-}
-
-.members-nav h2, ul {
-    padding: 0rem 2rem;
-    border: 2px solid blue;
-}
-
-.members-nav ul {
-    list-style-type: none;
-}
-
-.members-nav li {
-    padding: 0.5rem 0rem;
-}
-
-.members-nav a {
-    text-decoration: none;
-}
-
-.members-nav a:hover {
-    text-decoration: underline;
-    color: #500000;
+    text-align: center;
+    color: white;
 }
 
 
-.members-main-content {
-    flex: 5;
 
-    display: flex;
-    flex-direction:column;
-}
 
 .member-roles-container {
     display: flex;
     flex-direction: column;
 }
 
-.member-roles-container h2 {
+.member-roles-container h2, .previous-members h2 {
     text-align: center;
     font-family: "Oswald";
     font-weight: 400;
@@ -78,7 +48,14 @@ a {
     gap: 5rem;
     padding: 1rem 4rem;
 
-    border: 2px solid green
+}
+
+.member-container h3 {
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: "Oswald";
+    font-weight: 350;
+    padding-bottom: 0.5rem;
 }
 
 .figure-and-links {
@@ -100,5 +77,31 @@ a {
     width: 15rem;
     height: 15rem;
     object-fit: cover;
-    border: 2px solid purple
+}
+
+.previous-members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.previous-members-types {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.previous-members-types section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.previous-members-types ul {
+    list-style-type: none;
+    text-align: center;;
 }
