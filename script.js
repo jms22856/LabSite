@@ -21,3 +21,15 @@ close_mobile_sidebar.addEventListener("click", () => {
     mobile_sidebar.classList.remove("active");
     overlay.classList.remove("show");
 })
+
+
+let paulClickCount = 0;
+const paulPFP = document.getElementById("PI-PFP");
+
+paulPFP.addEventListener("click", () => {
+    paulClickCount++;
+
+    if (paulClickCount == 5) {
+        window.location.href = "https://www.coolmathgames.com/";
+    }
+});
